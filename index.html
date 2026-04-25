@@ -3,95 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Realitné Weby - Portfolio</title>
+
+<title>Realitné Weby - Portfólio</title>
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
+        font-family: 'Poppins', sans-serif;
         background: #f5f7fb;
-        color: #1f2a44;
+        color: #0f172a;
     }
 
+    /* HERO */
     header {
         background: #0f172a;
         color: white;
-        padding: 80px 20px;
+        padding: 120px 20px;
         text-align: center;
     }
 
     header h1 {
-        font-size: 42px;
-        margin-bottom: 10px;
+        font-size: 44px;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.2;
     }
 
     header p {
         font-size: 18px;
-        opacity: 0.8;
+        color: #94a3b8;
+        margin-top: 20px;
     }
 
     .btn {
         display: inline-block;
-        margin-top: 20px;
-        padding: 12px 24px;
+        margin-top: 30px;
+        padding: 12px 26px;
         background: #3b82f6;
         color: white;
         text-decoration: none;
-        border-radius: 8px;
+        border-radius: 10px;
+        font-weight: 500;
+        transition: 0.3s;
     }
 
-    .container {
+    .btn:hover {
+        background: #2563eb;
+        transform: translateY(-2px);
+    }
+
+    /* SEKCIE */
+    .section {
         max-width: 1100px;
         margin: auto;
-        padding: 60px 20px;
+        padding: 80px 20px;
     }
 
     h2 {
         text-align: center;
-        margin-bottom: 40px;
         font-size: 32px;
+        margin-bottom: 40px;
     }
 
+    /* GRID */
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
     }
 
+    /* KARTY */
     .card {
         background: white;
-        border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        border-radius: 14px;
+        padding: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
     }
 
     .card h3 {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     .tag {
         display: inline-block;
-        padding: 4px 10px;
+        padding: 5px 12px;
         font-size: 12px;
         background: #e0ecff;
         color: #2563eb;
         border-radius: 6px;
-        margin-bottom: 10px;
     }
 
+    /* ABOUT */
     .about {
         background: white;
         padding: 40px;
-        border-radius: 12px;
+        border-radius: 14px;
         text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
         margin-top: 40px;
     }
 
+    /* FOOTER */
     footer {
         text-align: center;
         padding: 30px;
         font-size: 14px;
-        color: #666;
+        color: #64748b;
     }
 </style>
 
@@ -100,12 +125,13 @@
 <body>
 
 <header>
-    <h1>Weby pre realitné kancelárie</h1>
-    <p>Zvyšujem počet dopytov cez moderný dizajn a lepšiu prezentáciu nehnuteľností</p>
-    <a href="#portfolio" class="btn">Zobraziť portfólio</a>
+    <h1>Weby pre realitné kancelárie, ktoré prinášajú viac dopytov</h1>
+    <p>Navrhujem moderné realitné weby zamerané na predaj nehnuteľností a dôveru klientov</p>
+    <a href="#portfolio" class="btn">Pozrieť projekty</a>
 </header>
 
-<section class="container" id="portfolio">
+<section class="section" id="portfolio">
+
     <h2>Moje projekty</h2>
 
     <div class="grid">
@@ -113,7 +139,7 @@
         <div class="card">
             <span class="tag">Premium realitka</span>
             <h3>Skyline Reality</h3>
-            <p>Moderný web pre predaj luxusných nehnuteľností s filtrom ponúk a detailom bytov.</p>
+            <p>Moderný web pre predaj luxusných nehnuteľností s filtrami a detailom ponúk.</p>
         </div>
 
         <div class="card">
@@ -125,7 +151,7 @@
         <div class="card">
             <span class="tag">Minimal dizajn</span>
             <h3>Nova Estate</h3>
-            <p>Moderný minimalistický web s dôrazom na prezentáciu nehnuteľností.</p>
+            <p>Moderný minimalistický realitný web s dôrazom na konverzie a prezentáciu nehnuteľností.</p>
         </div>
 
     </div>
@@ -133,15 +159,15 @@
     <div class="about">
         <h2>O mne</h2>
         <p>
-            Pomáham realitným kanceláriám a maklérom získať viac dopytov
-            cez moderné webové stránky, ktoré budujú dôveru a predávajú nehnuteľnosti.
+            Pomáham realitným kanceláriám získať viac dopytov cez moderné webové stránky,
+            ktoré budujú dôveru a zvyšujú predaj nehnuteľností.
         </p>
     </div>
 
 </section>
 
 <footer>
-    Kontakt: tvojemail@email.com | Web Design pre realitky
+    Kontakt: tvojemail@email.com
 </footer>
 
 </body>
