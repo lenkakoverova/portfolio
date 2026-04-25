@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Realitné Weby - Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        color: #1f2a44;
+    }
+
+    header {
+        background: #0f172a;
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 18px;
+        opacity: 0.8;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background: #3b82f6;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 60px 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    .tag {
+        display: inline-block;
+        padding: 4px 10px;
+        font-size: 12px;
+        background: #e0ecff;
+        color: #2563eb;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .about {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 14px;
+        color: #666;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Weby pre realitné kancelárie</h1>
+    <p>Zvyšujem počet dopytov cez moderný dizajn a lepšiu prezentáciu nehnuteľností</p>
+    <a href="#portfolio" class="btn">Zobraziť portfólio</a>
+</header>
+
+<section class="container" id="portfolio">
+    <h2>Moje projekty</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <span class="tag">Premium realitka</span>
+            <h3>Skyline Reality</h3>
+            <p>Moderný web pre predaj luxusných nehnuteľností s filtrom ponúk a detailom bytov.</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Lokálna realitka</span>
+            <h3>Domov Plus</h3>
+            <p>Jednoduchý a dôveryhodný web pre predaj a prenájom bytov v meste.</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Minimal dizajn</span>
+            <h3>Nova Estate</h3>
+            <p>Moderný minimalistický web s dôrazom na prezentáciu nehnuteľností.</p>
+        </div>
+
+    </div>
+
+    <div class="about">
+        <h2>O mne</h2>
+        <p>
+            Pomáham realitným kanceláriám a maklérom získať viac dopytov
+            cez moderné webové stránky, ktoré budujú dôveru a predávajú nehnuteľnosti.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    Kontakt: tvojemail@email.com | Web Design pre realitky
+</footer>
+
+</body>
+</html>
